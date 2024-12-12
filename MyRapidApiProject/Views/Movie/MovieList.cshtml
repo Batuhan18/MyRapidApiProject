@@ -1,0 +1,25 @@
+﻿@model List<MyRapidApiProject.Models.ApiMovieViewModel>
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th>
+            <th>Film Adı</th>
+            <th>Sitede Gör</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.title</td>
+                <td></td>
+            </tr>
+        }
+    </table>
+</div>
